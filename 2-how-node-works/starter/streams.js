@@ -4,7 +4,7 @@ const http = require('http');
 const server = http.createServer();
 
 server.on('request', (req, res) => {
-  console.log('request on');
+  console.log(req.url);
 
   res.end('ici');
 });
